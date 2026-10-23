@@ -1,0 +1,5 @@
+name: repo_health_audit
+title: "Repo Health Audit"
+description: "Audit a code repository against eight engineering health dimensions with a mechanical scanner plus a judgment pass, producing a score and an impact-ranked fix list."
+category: "Work and knowledge"
+include_in_prompt: true
