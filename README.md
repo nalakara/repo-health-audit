@@ -1,3 +1,5 @@
+**English** | [Bahasa Indonesia](README.id.md)
+
 # Repo Health Audit
 
 **Your repo looks finished. Would it survive a buyer's scorecard?**
