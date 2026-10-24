@@ -47,17 +47,56 @@ extracted from the reference reports lives in
 
 ## Install
 
-Copy the root `SKILL.md` together with `scripts/` and `references/` into
-the platform's skill folder:
+Clone this repository first, then run the block for your platform:
 
-- Gemini CLI and Antigravity: `~/.gemini/config/skills/repo-health-audit/`
-- Codex: `~/.codex/skills/repo-health-audit/`
-- DeepSeek Harness (dsh) and other `.agents` consumers: `~/.agents/skills/repo-health-audit/`
-- Claude Code: `~/.claude/skills/repo-health-audit/`
-- Muse: copy `claude/SKILL.md` and `claude/skill.yaml` plus `scripts/` and
-  `references/` into `~/workspace/custom-skills/repo-health-audit/`
-- ChatGPT: paste `chatgpt/INSTRUCTIONS.md` into a Custom GPT or Project
-  and upload the two files from `references/` as knowledge
+```bash
+git clone https://github.com/nalakara/repo-health-audit.git
+cd repo-health-audit
+```
+
+Gemini CLI and Antigravity:
+
+```bash
+mkdir -p ~/.gemini/config/skills/repo-health-audit
+cp SKILL.md ~/.gemini/config/skills/repo-health-audit/
+cp -r scripts references ~/.gemini/config/skills/repo-health-audit/
+```
+
+Codex:
+
+```bash
+mkdir -p ~/.codex/skills/repo-health-audit
+cp SKILL.md ~/.codex/skills/repo-health-audit/
+cp -r scripts references ~/.codex/skills/repo-health-audit/
+```
+
+DeepSeek Harness (dsh) and other `.agents` consumers:
+
+```bash
+mkdir -p ~/.agents/skills/repo-health-audit
+cp SKILL.md ~/.agents/skills/repo-health-audit/
+cp -r scripts references ~/.agents/skills/repo-health-audit/
+```
+
+Claude Code:
+
+```bash
+mkdir -p ~/.claude/skills/repo-health-audit
+cp SKILL.md ~/.claude/skills/repo-health-audit/
+cp -r scripts references ~/.claude/skills/repo-health-audit/
+```
+
+Muse:
+
+```bash
+mkdir -p ~/workspace/custom-skills/repo-health-audit
+cp claude/SKILL.md claude/skill.yaml ~/workspace/custom-skills/repo-health-audit/
+cp -r scripts references ~/workspace/custom-skills/repo-health-audit/
+```
+
+ChatGPT has no terminal route: paste `chatgpt/INSTRUCTIONS.md` into a
+Custom GPT or Project and upload the two files from `references/` as
+knowledge.
 
 ## Use
 
